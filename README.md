@@ -24,6 +24,9 @@ https://github.com/sspringer82/jsdeepdive
 - https://developer.mozilla.org/de/
 - https://kangax.github.io/compat-table/es6/
 - https://lodash.com
+- https://www.youtube.com/watch?v=ZCuYPiUIONs
+- https://babeljs.io/
+- https://www.typescriptlang.org/
 
 Immutability:
 
