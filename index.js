@@ -50,7 +50,44 @@ function hoisting() {
   }
 }
 
-hoisted2();
 let hoisted2 = function() {
   console.log('Hoisted 2');
 };
+hoisted2();
+
+// data types
+
+let string = 'asdf';
+// <input type="text" id="myNumber">
+let number = 14 / parseInt('1asdf', 10);
+console.log(number);
+let boolean = true;
+let undefinedType = undefined;
+let nullType = null;
+
+function myFunc(a, b) {
+  // if (a === undefined) {
+  //   a = 'x';
+  // }
+  // if (b === undefined) {
+  //   b = 'y';
+  // }
+  a = a || 'x';
+  b = b || 'y';
+  console.log(a, b);
+}
+myFunc();
+myFunc(1);
+myFunc(1, 2);
+myFunc(1, 2, 3);
+myFunc('', ``);
+
+const arr = ['a', 1, false];
+arr.push('xy');
+console.log(arr);
+
+const obj = { name: 'Klaus', age: 42 };
+obj.lastname = 'Müller';
+// doesn't work
+// obj = { name: 'Maria', lastname: 'Meier', age: 14 };
+console.log(obj);
