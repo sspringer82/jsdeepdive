@@ -97,3 +97,15 @@ const value = (async function() {
 value.then(res => {
   console.log('my async function result', res);
 });
+
+(async function() {
+  try {
+    const result = myPromiseFunction();
+    const result2 = myPromiseFunction();
+    const result3 = myPromiseFunction();
+    const values = await Promise.all([result, result2, result3]);
+    console.log('async function with all ', values);
+  } catch (e) {
+    console.error('x', e);
+  }
+})();
